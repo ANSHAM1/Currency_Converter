@@ -7,36 +7,43 @@
     <link rel="stylesheet" href="web.css" />
   </head>
   <body>
-    <div class="box">CURRENCY CONVERTER</div>
+    <header>
+      <div></div>
+    </header>
+    <div class="outer">
+      <div class="box"><h2>CURRENCY CONVERTER</h2></div>
 
-    <div class="container">
       <div class="container">
-        <img src="https://flagsapi.com/AE/flat/64.png" id="img1">
-        <select class="dropdown" id="from">
-            
-        </select>
+        <h4 class="h">From</h4>
+        <h4 class="h">To</h4>
       </div>
-      <div class="container">
-        <img src="https://flagsapi.com/AE/flat/64.png" id="img2">
-        <select class="dropdown" id="to">
-            
-        </select>
-      </div>
-    </div>
 
-    <div class="container">
       <div class="container">
-        <input type="number" class="text" id="t1">
+        <div class="container" id="fix">
+          <img src="https://flagsapi.com/AE/flat/64.png" class="img" id="img1" />
+          <select class="dropdown" id="from"></select>
+        </div>
+        <div><h2>&rarr;</h2></div>
+        <div class="container" id="fix">
+          <img src="https://flagsapi.com/AE/flat/64.png" class="img" id="img2" />
+          <select class="dropdown" id="to"></select>
+        </div>
       </div>
+
+      <div id="pos"><h4>Amount</h4></div>
       <div class="container">
-        <input type="text" class="text" id="t2" disabled>
+        <div class="container">
+          <input type="number" class="text" id="t1" />
+        </div>
+        <div class="container">
+          <h2>&rarr;</h2><input type="text" class="text" id="t2" disabled />
+        </div>
       </div>
-    </div>
-    
-    <div class="box">
+
+      <div class="box">
         <button id="btn">CONVERT</button>
+      </div>
     </div>
-
     <script src="country.js"></script>
     <script src="web.js"></script>
   </body>

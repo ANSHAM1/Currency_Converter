@@ -2,6 +2,7 @@ const dropdown1 = document.querySelectorAll(".dropdown");
 dropdown1.forEach((drop) => {
   Object.keys(countryList).forEach((country) => {
     let option = document.createElement("option");
+    option.classList.add("dropdown-content");
     drop.append(option);
     option.setAttribute("value", country);
     option.innerText = countryList[country];
